@@ -1,14 +1,7 @@
 require "pry"
 def reverse_each_word(sentence)
-  #  binding.pry
-  sentence.split
-    sentence.each do |sentence|
-      s
-
-
+  reversed = sentence.split(" ").collect do |word|
+  word.reverse
 end
-
-
-
-
-# " now's  the time".split
+  reversed.join(" ")
+end
